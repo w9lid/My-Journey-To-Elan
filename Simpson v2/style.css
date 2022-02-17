@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 217, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    margin: auto;
+    max-width: 1024px;
+}
+
+/*---------------- header ----------------*/
+
+header{
+    background-color: steelblue;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    font-style: italic;
+}
+
+.header{
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    width: 100%;
+    vertical-align: top;
+}
+
+/*---------------- nav ----------------*/
+
+nav{
+    background-color: steelblue;
+    border-bottom: 1px solid white;
+    border-bottom-style: dashed;
+    padding: 20px;
+    text-align: center;
+}
+
+a{
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/*---------------- main ----------------*/
+
+main{
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*---------------- article ----------------*/
+
+article{
+    width: 70%;
+    text-align: justify;
+}
+
+.divmovie{
+    padding: 5px;
+}
+
+.movie{
+    display: flex;
+}
+
+.imgmovie{
+    width: 100%;
+    border: 1px solid black;
+}
+
+h2{
+    color: rgb(255, 217, 0);
+    padding-bottom: 20px;
+}
+
+.article{
+    padding-bottom: 15px;
+}
+
+
+/*---------------- aside ----------------*/
+
+aside{
+    padding: 10px 25px;
+    width: 28%;
+    height: fit-content;
+    background-color: steelblue;
+}
+
+.imggr{
+    border: 1px solid white;
+    width: 100%;
+}
+
+h3{
+    padding-top: 10px;
+    color: white;
+    text-align: center;    
+}
+
+.job{
+    display: block;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+.aside{
+    padding-top: 10px;
+    color: white;
+    text-align: justify;
+}
+
+/*---------------- footer ----------------*/
+
+footer{
+    background-color: rgb(0, 0, 56);
+}
+
+.copyright{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
