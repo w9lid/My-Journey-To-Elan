@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    background-color: #fff;
+    color: #111;
+}
+
+
+img{
+    width: 100%;
+    vertical-align: top;
+}
+
+
+/* HEADER */
+
+
+
+.logo-nav{
+    padding: 1em 0;
+    border-bottom: 2px solid #111;
+    margin-bottom: 1em;
+}
+
+.logoRio{
+    padding-left: 1em;
+    width: 70px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+#link{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-nav{
+    text-decoration: none;
+    color: #111;
+}
+
+.burgericon{
+    color: #111;
+    font-size: 2em;
+    display: none;
+}
+
+.burgericon:hover{
+    color: red;
+}
+
+/* BANNER */
+
+.hero{
+    font-size: .8em;
+    position: relative;
+    color:#fff;
+   
+}
+
+.plage{
+    height: 15em;
+    object-fit: cover;
+}
+
+.zoom{
+    position: absolute;
+    bottom: 0%;
+    text-shadow: 1px 0 1px #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+.zoom span{
+    width:300px;
+}
+
+.voirArticle{
+    padding: 4px;
+    background-color: rgb(177, 0, 0);
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+}
+
+
+/* MAIN */
+
+
+main{
+    font-size: 0.8em;
+    padding: 1em 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ARTICLE */
+
+.helpCircle{
+    font-size: 2em;
+}
+
+article{
+    width: 70%;
+}
+
+.titreArticle{
+    display: flex;
+}
+
+.corpsArticle{
+    padding: 1em 0;
+    text-align: justify;
+}
+
+/* ASIDE */
+
+aside{
+    padding: 1em;
+    width: 25%;
+    background-color: #111;
+    color: #fff;
+}
+
+.aboutRio{
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.drapeau{
+    padding: 0 2em;
+}
+
+.textAside{
+    padding: 1em 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.icones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icone{
+    color: #fff;
+    text-decoration: none;
+    font-size: 3em;
+}
+
+
+/* FOOTER */
+
+
+footer{
+    padding-top: 1em;
+    border-top: 2px solid #111;
+    display: flex;
+    justify-content: space-between
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+    width: 25%;
+}
+
+.input{
+    margin-top: 1em;
+}
+
+/* PHOTOS */
+
+.photos{
+    width: 40%;
+}
+
+.photo {
+    object-fit: cover;
+    height: 70px;
+    margin-top: 1em;
+    width: 70px;
+}
+
+/* PARTENAIRES */
+
+.partenaires{
+    width: 30%;
+}
+
+.logopartner{
+    margin-top: 1em;
+    width: 70px;
+}
+
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 900px){
+
+    .logo-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logoRio{
+        width: 100px;
+        padding-bottom: 1em;
+    }
+
+    #link{
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+    .burgericon{
+        display: block;
+    }
+
+    .link-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+
+    .icones{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .newsletter{
+        width: 100%;
+    }
+    .photos{
+        padding-top: 1em;
+        width: 100%;
+    }
+    .partenaires{
+        padding: 1em 0 2em 0;
+        width: 100%;
+    }
+    
+
+}
