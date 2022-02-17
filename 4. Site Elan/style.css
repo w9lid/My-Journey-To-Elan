@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+    background-color: rgb(128, 128, 128);
+    font-size: 1em;
+}
+
+#container{
+    margin: 0 auto;
+}
+
+/* ------------------ Header ------------------ */
+
+header{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 165, 0);
+    padding: 1em;
+}
+
+.topMenu{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 40px;
+}
+
+.captionElan{
+    padding-left: 1em;
+}
+
+a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
+
+/* ------------------ Hero ------------------ */
+
+#hero {
+    display: flex;
+    align-items: center;
+}
+
+.parlement{
+    width: 100%;
+    height: 32em;
+    object-fit: cover;
+}
+
+.textHero{
+    color: white;
+    text-shadow: black 0 0 5px;
+    position: absolute;      
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0 2em;
+}
+
+h1{
+    font-weight: normal;
+}
+
+/* ------------------ Section ------------------ */
+
+section{
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgb(255, 165, 0);
+    border-style: dashed;
+    margin: 1em;
+    padding: 1em;
+}
+
+h2{
+    padding: 0.5em 0;
+}
+
+/* ------------------ Nos Formations ------------------ */
+
+table{
+    border: 1px solid rgb(128,128,128);
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    padding: 0.5em;
+    font-weight: bold;
+    color: white;
+    border: 1px solid rgb(128, 128, 128);
+    background-color: rgb(81, 81, 81);    
+}
+
+td{
+    padding: 0.5em;
+    border: 1px solid  rgb(128, 128, 128);
+}
+
+/* ------------------ Equipe ------------------ */
+
+.blockImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.illustrations{
+    padding: 1em;
+}
+
+.figEquipe{
+    position: relative;
+    box-shadow: black 0 0 5px;
+    border: 1px solid rgb(255, 165, 0);
+}
+
+img{
+    vertical-align: top;
+}
+
+.captionEquipe{
+    position: absolute;
+    bottom: 0%;
+    background: rgb(255, 165, 0, 0.8);
+    width: 100%; 
+    color: white;
+}
+
+/* ------------------ Nous contacter ------------------ */
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: rgb(81, 81, 81);
+}
+
+label{
+    padding: 1em 0 0 0;
+}
+.inputStyle{
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 165, 0);
+}
+
+#message{
+    resize: vertical;
+}
+
+.envoyer{
+    margin-top: 1em;
+    background: rgb(255, 165, 0);
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    padding: 2em;
+    width: 40%;
+}
+
+/* ------------------ Footer ------------------ */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(81, 81, 81);
+    color: white;
+    padding: 0.5em;
+}
+
+
+@media (min-width: 509px) {
+
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
+    a{
+        padding: 1em;
+    }
+
+    section{
+        text-align: left;
+    }
+    .captionEquipe{
+        text-align: center;
+    }
+}
+
+@media (min-width: 1600px) {
+    header{
+        padding: 1em 15em;
+    }
+    section{
+        margin: 1em 15em;
+    }
+}
