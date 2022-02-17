@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 217, 0);
+    font-family: Helvetica;
+}
+
+#contener{
+    margin:auto;
+    width: 60%;
+}
+
+/* ---------------------Ici commence le header--------------------- */
+
+header{
+    background-color: steelblue;
+    text-align: center;
+    color: white;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: top;
+}
+
+/* ---------------------Ici commence le main--------------------- */
+
+main{
+    background-color: white;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ---------------------navbar--------------------- */
+
+nav{
+    background-color: steelblue;
+    text-align: center;
+    height: fit-content;
+    padding: 20px;
+    width:18%;
+}
+
+ul{
+    padding: 0;
+    width: max-content;
+    line-height: 20px;
+    list-style-type: none;
+    margin: auto;
+}
+
+
+a{
+    color: white;
+    font-size: 80%;
+}
+
+/* ---------------------article--------------------- */
+
+article{
+    text-align: justify;
+    width:60%;
+}
+
+.article{
+    color: black;
+    font-size: 90%;
+}
+
+h2{
+    color: rgb(255, 217, 0);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* ---------------------aside--------------------- */
+
+aside{
+    background-color: steelblue;
+    width: auto;
+    width:18%;
+    padding: 20px;
+}
+
+.groening{
+    border: 1px solid white;
+}
+
+h3{
+    color: white;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.aside{
+    color: white;
+    text-align: justify;
+    font-size: 90%;
+}
+
+/* ---------------------Ici commence le footer--------------------- */
+
+footer{
+    background-color: rgb(23, 55, 143);
+    text-align: center;
+    padding: 5px;
+}
+
+small{
+    color: white;
+}
+
+
+/* ---------------------Media Queries--------------------- */
+
+
+/* ---------------------max767--------------------- */
+
+
+@media (max-width: 767px) {
+    body{
+        font-size: 1em;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    #contener{
+        width: 100%;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    nav{
+        width: 100%;
+    }
+    article{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    figure{
+        text-align: center;
+    }
+    .groening{
+        width: 60%;
+    }
+}
+
+/* ---------------------min768 max1023--------------------- */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body{
+        font-size: 1.5em;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    #contener{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+    ul{
+        line-height: 30px;
+    }
+    article{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    figure{
+        text-align: center;
+    }
+    .groening{
+        width: 60%;
+        border: 2px solid white;
+    }
+}
+
+/* ---------------------max1280--------------------- */
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    body{
+        font-size: 2.5em;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    #contener{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+    ul{
+        line-height: 40px;
+    }
+    article{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    figure{
+        text-align: center;
+    }
+    .groening{
+        width: 70%;
+        border: 2px solid white;
+    }
+}
